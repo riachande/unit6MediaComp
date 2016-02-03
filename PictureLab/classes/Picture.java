@@ -384,12 +384,13 @@ public void mirrorGull()
 
     }
 }
- public void cropAndCopy(Picture sourcePic,int startSourceRow ,int startSourceCol, int endSourceRow,int endSourceCol,int startDestRow, int startDestCol)
+public void cropAndCopy( Picture sourcePicture, int startSourceRow, int endSourceRow, int startSourceCol, int endSourceCol,
+         int startDestRow, int startDestCol )
   {
     Pixel pixel1 = null;
     Pixel pixel2 = null;
     Pixel[][] pixels2 = this.getPixels2D();
-    Pixel[][] pixels1= sourcePic.getPixels2D();
+    Pixel[][] pixels1= sourcePicture.getPixels2D();
     for (int row = startSourceRow, row2 = startDestRow;row <= endSourceRow && row2 < pixels2.length; row++, row2++)
     {
       for (int col = startSourceCol, col2 = startDestCol;col <= endSourceCol &&col2 < pixels2[0].length; col++, col2++)

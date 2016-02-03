@@ -354,12 +354,19 @@ public class SimplePicture implements DigitalPicture
    Pixel[][] pixelArray = new Pixel[height][width];
    
    // loop through height rows from top to bottom
-   for (int row = 0; row < height; row++) 
-     for (int col = 0; col < width; col++) 
-       pixelArray[row][col] = new Pixel(this,col,row);
-    
-   return pixelArray;
- }
+   
+   for (int row = 0; row <height; row++)
+   {
+       for (int col = 0; col <width; col++)
+       {
+           pixelArray[row][col] = new Pixel(this,col,row);
+       
+ 
+
+    }
+    }
+     return pixelArray;
+}
  
  /**
   * Method to load the buffered image with the passed image

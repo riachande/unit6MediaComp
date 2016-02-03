@@ -140,7 +140,7 @@ public class PictureTester
     // to run
     testZeroBlue();
     testKeepOnlyBlue();
-    /testKeepOnlyRed();
+    
     //testKeepOnlyGreen();
     testNegate();
     testGrayscale();
@@ -154,7 +154,7 @@ public class PictureTester
     testMirrorGull();
     //testMirrorDiagonal();
     //testCollage();
-    testCopy();
+   // testCopy();
     testMirrorHorizontal();
     testMirrorVerticalRightToLeft();
     testMirrorHorizontalBotToTop();
